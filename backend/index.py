@@ -20,7 +20,6 @@ embedding_model = HuggingFaceEmbeddings(
 
 vector_store = FAISS.from_documents(docs, embedding_model)
 
-# ✅ SAVE IT
+
 vector_store.save_local("faiss_index")
 
-print("✅ Embeddings created and saved")
